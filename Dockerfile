@@ -4,11 +4,11 @@ FROM gcr.io/google_containers/kube-scheduler-arm64:v1.18.2
 FROM gcr.io/google_containers/kube-proxy-arm64:v1.18.2
 FROM gcr.io/google_containers/pause-arm64:3.2
 FROM gcr.io/google_containers/etcd-arm64:3.4.3-0
-FROM gcr.io/google_containers/coredns:1.6.7-arm64
+#FROM gcr.io/google_containers/coredns:1.6.7-arm64
 FROM gcr.io/google_containers/kube-apiserver-amd64:v1.18.2
 FROM gcr.io/google_containers/kube-controller-manager-amd64:v1.18.2
 FROM gcr.io/google_containers/kube-scheduler-amd64:v1.18.2
 FROM gcr.io/google_containers/kube-proxy-amd64:v1.18.2
 FROM gcr.io/google_containers/pause-amd64:3.2
 FROM gcr.io/google_containers/etcd-amd64:3.4.3-0
-FROM gcr.io/google_containers/coredns:1.6.7-amd64
+#FROM gcr.io/google_containers/coredns:1.6.7-amd64
