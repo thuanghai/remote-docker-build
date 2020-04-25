@@ -1,1 +1,1 @@
-FROM gcr.io/google_containers/pause-arm64:3.2
+FROM k8s.gcr.io/pause-arm64:3.2
