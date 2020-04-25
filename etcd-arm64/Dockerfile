@@ -1,0 +1,1 @@
+FROM gcr.io/google_containers/etcd-arm64:3.4.3-0
