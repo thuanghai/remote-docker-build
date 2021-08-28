@@ -1,1 +1,3 @@
+ARG ARCH="arm64"
+ARG OS="linux"
 FROM gcr.io/kaniko-project/executor:v1.6.0
