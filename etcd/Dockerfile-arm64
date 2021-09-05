@@ -1,3 +1,1 @@
-ARG ARCH="arm64"
-ARG OS="linux"
 FROM k8s.gcr.io/etcd-arm64:3.4.3-0
