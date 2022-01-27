@@ -1,3 +1,4 @@
 ARG VERSION=0.2.0
-ARG ARCH=amd64
-FROM quay.io/strimzi/drain-cleaner:${VERSION}-${ARCH}
+#ARG ARCH=amd64
+#FROM quay.io/strimzi/drain-cleaner:${VERSION}-${ARCH}
+FROM quay.io/strimzi/drain-cleaner:${VERSION}
