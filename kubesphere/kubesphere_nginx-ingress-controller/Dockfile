@@ -1,1 +1,1 @@
-FROM kubesphere/nginx-ingress-controller:v0.48.1
+FROM docker.io/kubesphere/nginx-ingress-controller:v0.48.1

@@ -1,1 +1,1 @@
-FROM docker:19.03
+FROM docker.io/docker:19.03
