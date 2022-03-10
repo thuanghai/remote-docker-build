@@ -2,6 +2,7 @@ ARG SDC_VERSION=3.14.0
 FROM docker.io/streamsets/datacollector:${SDC_VERSION}
 
 ARG SDC_LIBS="\
+streamsets-datacollector-basic-lib,\
 streamsets-datacollector-dev-lib,\
 streamsets-datacollector-dataformats-lib,\
 streamsets-datacollector-apache-kafka_2_0-lib,\
