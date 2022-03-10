@@ -2,7 +2,7 @@ ARG SDC_VERSION=3.14.0
 FROM docker.io/streamsets/datacollector:${SDC_VERSION}
 
 ARG SDC_LIBS="\
-streamsets-datacollector-apache-kafka_2_3-lib,\
+streamsets-datacollector-apache-kafka_2_2-lib,\
 streamsets-datacollector-elasticsearch_7-lib,\
 streamsets-datacollector-jdbc-lib"
 
