@@ -1,4 +1,4 @@
-ARG SDC_VERSION=3.12.1
+ARG SDC_VERSION=3.12.0
 FROM docker.io/streamsets/datacollector:${SDC_VERSION}
 
 ARG SDC_LIBS="\
