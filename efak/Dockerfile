@@ -1,5 +1,3 @@
-MAINTAINER HuangHai
-
 FROM 8-jdk-alpine
 
 ENV EFAK_VERSION=3.0.1
