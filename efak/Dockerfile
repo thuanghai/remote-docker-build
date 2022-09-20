@@ -4,10 +4,10 @@ ENV EFAK_VERSION=3.0.1
 ENV KE_HOME=/opt/efak
 
 RUN cd /opt && curl -O  https://github.com/smartloli/kafka-eagle-bin/archive/v${EFAK_VERSION}.tar.gz && \
-    tar -xzvf v${EFAK_VERSION}.tar.gz && \
+    tar -xzf v${EFAK_VERSION}.tar.gz && \
     tar -xzf kafka-eagle-bin-${EFAK_VERSION}/efak-web-${EFAK_VERSION}-bin.tar.gz && \
-    rm -rf kafka-eagle-bin-* v${EFAK_VERSION}.tar.gz && \
-    mv efak-web-* efak
+    mv efak-web-${EFAK_VERSION} efak && \
+    rm -rf kafka-eagle-bin-${EFAK_VERSION} *.tar.gz
 
 WORKDIR /opt/efak
 
