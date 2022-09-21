@@ -24,5 +24,4 @@ EXPOSE 9000
 
 WORKDIR /opt/cmak
 
-ENTRYPOINT ["/opt/cmak/bin/cmak", "-Dpidfile.path=/dev/null", "-Dapplication.home=/opt/cmak", ""]
-#ENTRYPOINT ["/opt/cmak/bin/cmak", "-Dconfig.file=/opt/cmak/conf/application.conf"]
+ENTRYPOINT ["/opt/cmak/bin/cmak", "-Dconfig.file=/opt/cmak/conf/application.conf"]
