@@ -14,6 +14,8 @@ RUN set -eux \
  && useradd -r -g cmak --uid 1000 cmak \
  && chown -R cmak:cmak /opt/cmak
 
+ADD application.conf /opt/cmak/conf
+
 VOLUME /opt/cmak/conf
 
 ENV JAVA_OPTS=-XX:MaxRAMPercentage=80
@@ -25,3 +27,4 @@ EXPOSE 9000
 WORKDIR /opt/cmak
 
 ENTRYPOINT ["/opt/cmak/bin/cmak", "-Dconfig.file=/opt/cmak/conf/application.conf"]
+#ENTRYPOINT ["/opt/cmak/bin/cmak"]
