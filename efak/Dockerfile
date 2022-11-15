@@ -18,6 +18,6 @@ ADD healthcheck.sh /usr/bin/
 
 EXPOSE 8048
 
-HEALTHCHECK --start-period=30s --retries=1 --interval=10s --timeout=5s CMD  /usr/bin/healthcheck.sh
+HEALTHCHECK --start-period=30s --retries=1 --interval=10s --timeout=5s CMD sh /usr/bin/healthcheck.sh
 
-ENTRYPOINT ["/usr/bin/entrypoint.sh"]
+ENTRYPOINT ["sh", "/usr/bin/entrypoint.sh"]
