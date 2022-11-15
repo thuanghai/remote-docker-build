@@ -1,3 +1,3 @@
+#!/bin/sh
 sh /opt/efak/bin/ke.sh start
-tail -f /opt/efak/kms/logs/catalina.out
-#tail -100f /opt/efak/logs/log.log
+tail -f -n 100 /opt/efak/kms/logs/catalina.out
