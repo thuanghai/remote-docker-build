@@ -13,11 +13,8 @@ WORKDIR /opt/efak
 ENV KE_HOME=/opt/efak
 ENV PATH $KE_HOME/bin:$PATH
 
-ADD entrypoint.sh /usr/bin/
-ADD healthcheck.sh /usr/bin/
+ADD entrypoint.sh /usr/bin
 
 EXPOSE 8048
-
-HEALTHCHECK --start-period=30s --retries=1 --interval=10s --timeout=5s CMD  /usr/bin/healthcheck.sh
 
 ENTRYPOINT ["/usr/bin/entrypoint.sh"]
