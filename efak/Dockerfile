@@ -1,4 +1,5 @@
-FROM openjdk:8-jdk-alpine
+#FROM openjdk:8-jdk-alpine
+FROM openjdk:8-slim-bullseye
 
 ENV EFAK_VERSION=3.0.2
 
