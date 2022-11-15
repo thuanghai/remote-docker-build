@@ -3,7 +3,8 @@ FROM openjdk:8-slim-bullseye
 
 ENV EFAK_VERSION=3.0.2
 
-RUN apt-get install curl
+RUN apt-get update \
+    && apt-get install -y curl
 
 RUN cd /opt && curl -O https://github.com/smartloli/kafka-eagle-bin/archive/v${EFAK_VERSION}.tar.gz && \
     tar -xzf v${EFAK_VERSION}.tar.gz && \
