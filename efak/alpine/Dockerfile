@@ -15,8 +15,8 @@ WORKDIR /opt/efak
 ENV KE_HOME=/opt/efak
 ENV PATH $KE_HOME/bin:$PATH
 
-COPY alpine/entrypoint.sh /usr/local/bin/
-COPY alpine/healthcheck.sh /usr/local/bin/
+COPY docker-entrypoint.sh /usr/local/bin/
+COPY healthcheck.sh /usr/local/bin/
 
 EXPOSE 8048
 
