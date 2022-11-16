@@ -15,8 +15,8 @@ WORKDIR /opt/efak
 ENV KE_HOME=/opt/efak
 ENV PATH $KE_HOME/bin:$PATH
 
-ADD entrypoint.sh /usr/local/bin/
-ADD healthcheck.sh /usr/local/bin/
+COPY entrypoint.sh /usr/local/bin/
+COPY healthcheck.sh /usr/local/bin/
 
 EXPOSE 8048
 
