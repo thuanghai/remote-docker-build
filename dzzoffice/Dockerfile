@@ -17,4 +17,4 @@
 
 FROM imdevops/dzzoffice:latest
 
-RUN apt-get update && apt-get install -y vim 
+RUN apt-get update && apt-get install -y vi 
