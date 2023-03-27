@@ -14,6 +14,7 @@
 #  && mv /tmp/dzzoffice-${VERSION}/* /var/www/html/
 #
 #RUN chown -R www-data:www-data /var/www/html/
+
 FROM imdevops/dzzoffice:latest
 
 RUN apt-get update && apt-get install vim && apt-get autoclean
