@@ -2,11 +2,11 @@ FROM php:7.3.8-apache-stretch
 
 ENV VERSION 2.02.1
 
-RUN apt-get update && apt-get install -y libzip-dev libfreetype6-dev \
+RUN apt-get update && apt-get install -y libzip-dev libfreetype6-dev vim\
   && docker-php-ext-install mysqli \
   && docker-php-ext-install gd \
   && docker-php-ext-install zip \
-  && vim
+  && apt-get autoclean
 
 RUN curl -o /tmp/dzzoffice-${VERSION}.tar.gz https://codeload.github.com/zyx0814/dzzoffice/tar.gz/${VERSION} \
   && tar -xzvf /tmp/dzzoffice-${VERSION}.tar.gz -C /tmp \
